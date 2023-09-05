@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS-like Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <span id="result">0</span>
+        </div>
+        <div class="buttons">
+            <button class="operator" onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('/')">÷</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('*')">x</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+    </div>
+    <div class="footer">
+        <div class="container">
+            &copy; 2023 Godfrey | Contact: <a href="tel:0676011037" class="contact-link">0676011037</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* CSS styles for the iOS-like calculator with rounded buttons and softer colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 10px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #f0f0f0;
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+    padding: 10px;
+    font-size: 36px;
+}
+
+.display #result {
+    margin-right: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    background-color: #ffaa2a;
+    font-size: 24px;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff9500;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .calculator {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .display {
+    background-color: #666;
+    color: #fff;
+}
+
+body.dark-theme .operator {
+    background-color: #ff9500;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    border-radius: 12px;
+    background-color: #ff9500;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.theme-toggle:hover {
+    color: #333;
+    background-color: #ffaa2a;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for the footer (Light Theme) */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Light text color */
+    padding: 20px 0; /* Add some padding top and bottom */
+    text-align: center;
+    width: 100%; /* Expand to the full width of the viewport */
+}
+
+/* Styles for the footer (Dark Theme) */
+body.dark-theme .footer {
+    background-color: #666; /* Dark background color */
+    color: #fff; /* Light text color */
+    width: 100%; /* Expand to the full width of the viewport */
+}
+
