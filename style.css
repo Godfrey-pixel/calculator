@@ -14,7 +14,8 @@ body {
     background-color: #dcdcdc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 100%; /* Full width on mobile screens */
+    max-width: 320px; /* Max width for larger screens */
     margin: 10px auto;
     flex: 1;
     display: flex;
@@ -106,13 +107,14 @@ body.dark-theme .operator {
     color: white; /* Light text color */
     padding: 20px 0; /* Add some padding top and bottom */
     text-align: center;
-    width: 100%; /* Expand to the full width of the viewport */
-}
+    width: 100%; /* Full width on mobile screens */
+    max-width: 320px; /* Max width for larger screens */
 
 /* Styles for the footer (Dark Theme) */
 body.dark-theme .footer {
     background-color: #666; /* Dark background color */
     color: #fff; /* Light text color */
-    width: 100%; /* Expand to the full width of the viewport */
+    width: 100%; /* Full width on mobile screens */
+    max-width: 320px; /* Max width for larger screens */
 }
 
